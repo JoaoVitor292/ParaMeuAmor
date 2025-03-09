@@ -157,7 +157,7 @@ function toggleMusic() {
     loader.style.display = 'block';
 
     let progress = 0;
-    const duration = 50; // minutos em segundos
+    const duration = 8; // minutos em segundos
     const interval = 50; // Atualiza a cada 50ms
     const increment = 100 / (duration * (1000 / interval));
 
