@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Namorada Millena ❤️</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="netflix-logo">VALENTINE DA MILLENA</div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="title">Feliz Seu Dia Amor, Millena! ❤️</h1>
+            <p class="subtitle">Nossa história de amor é melhor que qualquer série da Netflix</p>
+            <button class="heart-button" onclick="showLove()">💖 Clique para varias surpresas!</button>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="gallery-item">
+            <img src="./img/imagen1.png" alt="Nossa Memória 1">
+        </div>
+        <p>Seu sorriso ilumina qualquer momento! ✨</p>
+        <div class="gallery-item">
+            <img src="./img/imagen2.png" alt="Nossa Memória 2">
+        </div>
+        <p>Você é a definição de elegância e força! 💖</p>
+        <div class="gallery-item">
+            <img src="./img/imagen3.png" alt="Nossa Memória 3">
+        </div>
+        <p>Inspiração é seu segundo nome! 🌟</p>
+        <div class="gallery-item">
+            <img src="./img/imagen4.png" alt="Nossa Memória 4">
+        </div>
+        <p>Seu brilho transforma qualquer dia! 💕</p>
+        <div class="gallery-item">
+            <img src="./img/imagen5.png" alt="Nossa Memória 5">
+        </div>
+        <p>Uma mulher incrível merece todo reconhecimento! 🌷</p>
+
+    </section>
+    
+
+    <section class="video-container">
+        <h2 style="margin-bottom: 20px;">Nossos Momentos Especiais</h2>
+    
+        <div id="video-overlay" class="overlay">
+            <p>Clique na música abaixo para começar</p>
+        </div>
+    
+        <video id="video" muted loop playsinline class="rounded-video hidden">
+            <source src="./videos/videos.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+    
+        <button id="toggleButton" class="heart-button" onclick="toggleMedia()">🎶 Tocar Música</button>
+        <audio id="loveSong" src="./audio/Orochi_AMOR_DE_FIM_DE_NOITE.mp3"></audio>
+    </section>
+
+
+    <section class="gallery">
+        <div class="gallery-item">
+
+            <h1>Nossos Momentos Especiais🌸</h1>
+            <br>
+            <p>
+                A vida é feita de momentos, né? E os mais brabos são aqueles que a gente compartilha com quem faz 
+                nosso coração bater mais forte. 
+                <br>
+                <br>
+                Hoje é dia de exaltar você, que faz tudo com garra, leveza
+                e aquele jeitinho único de transformar qualquer dia comum num dia especial.
+                <br>
+                <br>
+                
+                Então, se liga: cê é incríveis, guerreira, e merece o mundo! <br> Que nunca falte amor, respeito 
+                e reconhecimento.
+                
+                Feliz Dia da Mulher, minha rainha! 💖✨
+            </p>
+        </div>
+    
+    </section>
+    
+    
+      <!-- Seção da Surpresa Final -->
+      <section class="final-surprise">
+        <!-- Botão de confirmação que aparece primeiro -->
+        <button class="confirm-button pulse" onclick="confirmRead()">
+            Continuar para a surpresa 💕
+        </button>
+        
+        <!-- Botão de revelação da surpresa final (inicialmente escondido) -->
+        <button class="surprise-button" onclick="startSurprise()" style="display: none;">
+            Revelar Surpresa Final 💝
+        </button>
+        
+        <!-- Loader estilo Netflix -->
+        <div class="netflix-loader">
+            <div class="percentage">0%</div>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <div class="loading-text">Preparando sua surpresa especial...</div>
+        </div>
+        
+        <!-- Mensagem final -->
+        <div class="final-message">
+            <h2>💖 Millena 💖</h2>
+            <p>Agora vá até a porta...</p>
+            <p>Tem alguém especial esperando por você! 🌹</p>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
